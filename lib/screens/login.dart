@@ -267,7 +267,8 @@ class LoginScreen extends StatelessWidget {
                                 style: TextStyle(
                                     color: Colors.blueGrey,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 12)),
+                                    fontSize: 12),
+                                    linkUrl: 'https://canli-team.github.io/Canli/privacypolicyterms.html'),
                           ],
                         )),
                       ),
