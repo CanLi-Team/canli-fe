@@ -5,7 +5,7 @@ import 'package:CanLi/screens/signup.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 final Uri _url = Uri.parse(
-    'https://cornateam.github.io/Privacy-and-Condition/web/privacy_policy.html');
+    'https://canli-team.github.io/Canli/privacypolicyterms.html');
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
