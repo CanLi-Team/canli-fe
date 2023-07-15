@@ -4,5 +4,5 @@ import 'package:CanLi/screens/splashScreen.dart';
 import 'package:CanLi/screens/moduleBasedLearningScreen.dart';
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: moduleBasedLearningScreen()));
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: SplashScreen()));
 }

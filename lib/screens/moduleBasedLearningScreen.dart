@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:CanLi/screens/feeback.dart';
 
 class moduleBasedLearningScreen extends StatelessWidget {
   const moduleBasedLearningScreen({super.key});
@@ -16,7 +15,7 @@ class moduleBasedLearningScreen extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.width / 1.6,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
               ),
               child: Row(
@@ -54,8 +53,9 @@ class moduleBasedLearningScreen extends StatelessWidget {
               // height: 537.5,
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.width + 145,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   color: Color(0xFFF2F2FA),
+                  // color: Colors.amber,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(100),
                       topRight: Radius.circular(100))),
@@ -68,6 +68,10 @@ class moduleBasedLearningScreen extends StatelessWidget {
                         padding: EdgeInsets.only(top: 100.0),
                         child: Card(
                           clipBehavior: Clip.hardEdge,
+                          color: Color(0XFF1D2749),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12)
+                          ),
                           child: InkWell(
                             splashColor: Colors.blue.withAlpha(30),
                             onTap: () {
@@ -75,34 +79,124 @@ class moduleBasedLearningScreen extends StatelessWidget {
                             },
                             child: SizedBox(
                               width: 300,
-                              height: 100,
+                              height: 120,
                               child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Container(
-                                    child: Text("About Licensing System"),
+                                  const Expanded(
+                                    flex: 1,
+                                    child: Text(
+                                      "About Licensing System",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontSize: 28,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    ),
                                   ),
-                                  Container(
-                                    child: Image.asset("images/logo/CanLi_logo.png"),
+                                  Expanded(
+                                    child: Image.asset(
+                                      "images/logo/licensing_system.png",
+                                      fit: BoxFit.fill,
+                                      alignment: Alignment.center,
+                                      ),
                                   )
                                 ],
                               ),
                             ),
                           ),
                         ),
-                        // child: Card(
-                        //   elevation: 0,
-                        //   shape: RoundedRectangleBorder(
-                        //     side: BorderSide(
-                        //       color: Theme.of(context).colorScheme.outline,
-                        //     ),
-                        //     borderRadius:
-                        //         const BorderRadius.all(Radius.circular(12)),
-                        //   ),
-                        //   child: const SizedBox(
-                        //     width: 300,
-                        //     height: 100,
-                        //   ),
-                        // ),
+                      ),
+
+                      Padding(
+                        padding: EdgeInsets.only(top: 25.0),
+                        child: Card(
+                          clipBehavior: Clip.hardEdge,
+                          color: Color(0XFF1D2749),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12)
+                          ),
+                          child: InkWell(
+                            splashColor: Colors.blue.withAlpha(30),
+                            onTap: () {
+                              debugPrint('Card tapped.');
+                            },
+                            child: SizedBox(
+                              width: 300,
+                              height: 120,
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  const Expanded(
+                                    flex: 1,
+                                    child: Text(
+                                      "Road Signs",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontSize: 28,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Image.asset(
+                                      "images/logo/road_sign.png",
+                                      fit: BoxFit.fill,
+                                      alignment: Alignment.center,
+                                      ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      Padding(
+                        padding: EdgeInsets.only(top: 25.0),
+                        child: Card(
+                          clipBehavior: Clip.hardEdge,
+                          color: Color(0XFF1D2749),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12)
+                          ),
+                          child: InkWell(
+                            splashColor: Colors.blue.withAlpha(30),
+                            onTap: () {
+                              debugPrint('Card tapped.');
+                            },
+                            child: SizedBox(
+                              width: 300,
+                              height: 120,
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  const Expanded(
+                                    flex: 1,
+                                    child: Text(
+                                      "Fines, Limites & Points",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontSize: 28,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Image.asset(
+                                      "images/logo/fines_limits.png",
+                                      fit: BoxFit.fill,
+                                      alignment: Alignment.center,
+                                      ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
                       ),
                     ]),
                   ]),
