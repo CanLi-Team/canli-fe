@@ -1,5 +1,7 @@
+import 'package:CanLi/screens/editProfile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:CanLi/screens/editProfile.dart';
 import 'package:CanLi/screens/homeScreen.dart';
 import 'package:CanLi/screens/profile.dart';
 
@@ -175,7 +177,7 @@ class FeedbackScreen extends StatelessWidget {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                      const ProfileScreen()),
+                                       editProfile()),
                                 );
                               },
                               //Customizes this button's appearance
